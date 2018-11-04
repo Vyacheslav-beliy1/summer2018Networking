@@ -14,6 +14,7 @@
 		171760B0218DB935000AA530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171760AE218DB935000AA530 /* LaunchScreen.storyboard */; };
 		F50AAD54218F0C5E004FFF1C /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50AAD53218F0C5E004FFF1C /* Posts.swift */; };
 		F50AAD56218F0CEB004FFF1C /* UserModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50AAD55218F0CEB004FFF1C /* UserModels.swift */; };
+		F53380A2218F32790063139F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53380A1218F32790063139F /* Constants.swift */; };
 		F5CD4549218DD50F00FDE765 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CD4548218DD50F00FDE765 /* RequestManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		171760B1218DB935000AA530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F50AAD53218F0C5E004FFF1C /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		F50AAD55218F0CEB004FFF1C /* UserModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModels.swift; sourceTree = "<group>"; };
+		F53380A1218F32790063139F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F5CD4548218DD50F00FDE765 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,7 @@
 				F50AAD52218F0C2D004FFF1C /* Models */,
 				171760A9218DB932000AA530 /* Main.storyboard */,
 				F5CD4548218DD50F00FDE765 /* RequestManager.swift */,
+				F53380A1218F32790063139F /* Constants.swift */,
 				171760AC218DB935000AA530 /* Assets.xcassets */,
 				171760AE218DB935000AA530 /* LaunchScreen.storyboard */,
 				171760B1218DB935000AA530 /* Info.plist */,
@@ -157,6 +160,7 @@
 				171760A8218DB932000AA530 /* ViewController.swift in Sources */,
 				171760A6218DB932000AA530 /* AppDelegate.swift in Sources */,
 				F50AAD54218F0C5E004FFF1C /* Posts.swift in Sources */,
+				F53380A2218F32790063139F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,10 +16,34 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendGetRequest() {
-    RequestManager.getPosts()
+        RequestManager.getPosts(with: 1) { posts in
+            print(posts)
+            DispatchQueue.main.async {
+                
+            }
+        }
     }
     
-
-
+    @IBAction func getUsersAction() {
+        RequestManager.users { (users) in
+            print(users)
+            DispatchQueue.main.async {
+                
+            }
+        }
+    
+    
+    }
+    
+    @IBAction func createPostAction() {
+        let post = Posts()
+        post.id = 324
+        post.userId = 1
+        post.body = "body string"
+        post.title = "title string"
+        RequestManager.createPost(post)
+    
+    }
+    
 }
 

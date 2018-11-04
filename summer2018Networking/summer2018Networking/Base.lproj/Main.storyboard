@@ -25,11 +25,29 @@
                                     <action selector="sendGetRequest" destination="BYZ-38-t0r" eventType="touchUpInside" id="nuh-qt-lLL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5B-xC-PvF">
+                                <rect key="frame" x="153" y="270" width="69" height="30"/>
+                                <state key="normal" title="Get Users"/>
+                                <connections>
+                                    <action selector="getUsersAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Htz-lh-NmY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drQ-6F-BVX">
+                                <rect key="frame" x="150.5" y="207" width="74" height="30"/>
+                                <state key="normal" title="POST post"/>
+                                <connections>
+                                    <action selector="createPostAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="5IB-Ex-Z7U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="drQ-6F-BVX" firstAttribute="centerX" secondItem="H5B-xC-PvF" secondAttribute="centerX" id="1y8-E7-gzB"/>
+                            <constraint firstItem="qLC-b7-bUs" firstAttribute="top" secondItem="H5B-xC-PvF" secondAttribute="bottom" constant="28.5" id="4ce-ws-rrm"/>
                             <constraint firstItem="qLC-b7-bUs" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Hje-jD-htS"/>
                             <constraint firstItem="qLC-b7-bUs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NZ2-my-f79"/>
+                            <constraint firstItem="H5B-xC-PvF" firstAttribute="centerX" secondItem="qLC-b7-bUs" secondAttribute="centerX" id="a6e-vv-jsz"/>
+                            <constraint firstItem="H5B-xC-PvF" firstAttribute="top" secondItem="drQ-6F-BVX" secondAttribute="bottom" constant="33" id="qMd-ko-zaY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
