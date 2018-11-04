@@ -13,6 +13,8 @@
 		171760AD218DB935000AA530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171760AC218DB935000AA530 /* Assets.xcassets */; };
 		171760B0218DB935000AA530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171760AE218DB935000AA530 /* LaunchScreen.storyboard */; };
 		171760B8218DD50C000AA530 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171760B7218DD50C000AA530 /* RequestManager.swift */; };
+		171760BB218F0C29000AA530 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171760BA218F0C29000AA530 /* Post.swift */; };
+		171760BD218F0CE9000AA530 /* UserModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171760BC218F0CE9000AA530 /* UserModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		171760AF218DB935000AA530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		171760B1218DB935000AA530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		171760B7218DD50C000AA530 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		171760BA218F0C29000AA530 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		171760BC218F0CE9000AA530 /* UserModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		171760A4218DB932000AA530 /* summer2018Networking */ = {
 			isa = PBXGroup;
 			children = (
+				171760B9218F0C0E000AA530 /* Models */,
 				171760A5218DB932000AA530 /* AppDelegate.swift */,
 				171760A7218DB932000AA530 /* ViewController.swift */,
 				171760A9218DB932000AA530 /* Main.storyboard */,
@@ -65,6 +70,15 @@
 				171760B1218DB935000AA530 /* Info.plist */,
 			);
 			path = summer2018Networking;
+			sourceTree = "<group>";
+		};
+		171760B9218F0C0E000AA530 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				171760BA218F0C29000AA530 /* Post.swift */,
+				171760BC218F0CE9000AA530 /* UserModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +153,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				171760B8218DD50C000AA530 /* RequestManager.swift in Sources */,
+				171760BD218F0CE9000AA530 /* UserModels.swift in Sources */,
 				171760A8218DB932000AA530 /* ViewController.swift in Sources */,
 				171760A6218DB932000AA530 /* AppDelegate.swift in Sources */,
+				171760BB218F0C29000AA530 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
