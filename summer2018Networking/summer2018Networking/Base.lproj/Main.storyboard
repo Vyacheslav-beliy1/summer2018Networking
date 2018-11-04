@@ -19,16 +19,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylE-dG-3sg">
-                                <rect key="frame" x="142" y="328.5" width="90" height="30"/>
-                                <state key="normal" title="GET Request"/>
+                                <rect key="frame" x="151.5" y="328.5" width="71" height="30"/>
+                                <state key="normal" title="GET Posts"/>
                                 <connections>
                                     <action selector="sendGetRequest" destination="BYZ-38-t0r" eventType="touchUpInside" id="qi8-fa-cfB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvl-cK-Li6">
+                                <rect key="frame" x="152.5" y="290" width="69" height="30"/>
+                                <state key="normal" title="Get Users"/>
+                                <connections>
+                                    <action selector="getUsersAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wx4-7t-VUd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05j-Q3-IgG">
+                                <rect key="frame" x="150" y="238" width="74" height="30"/>
+                                <state key="normal" title="POST post"/>
+                                <connections>
+                                    <action selector="createPostAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="QpF-DX-uVS"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Hvl-cK-Li6" firstAttribute="top" secondItem="05j-Q3-IgG" secondAttribute="bottom" constant="22" id="2Vi-zd-tWJ"/>
                             <constraint firstItem="ylE-dG-3sg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="HXR-Op-ekN"/>
+                            <constraint firstItem="ylE-dG-3sg" firstAttribute="top" secondItem="Hvl-cK-Li6" secondAttribute="bottom" constant="8.5" id="UQB-Sh-uFV"/>
+                            <constraint firstItem="05j-Q3-IgG" firstAttribute="centerX" secondItem="Hvl-cK-Li6" secondAttribute="centerX" id="WOK-oi-Uaz"/>
+                            <constraint firstItem="Hvl-cK-Li6" firstAttribute="centerX" secondItem="ylE-dG-3sg" secondAttribute="centerX" id="yL3-gr-iOe"/>
                             <constraint firstItem="ylE-dG-3sg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zBt-sw-J05"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

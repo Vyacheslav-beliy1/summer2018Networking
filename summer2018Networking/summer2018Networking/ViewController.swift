@@ -24,5 +24,23 @@ class ViewController: UIViewController {
             }
         }
     }
+    @IBAction func getUsersAction() {
+        RequestManager.users { (users) in
+            print(users)
+            DispatchQueue.main.async {
+                //label update
+                //table update
+            }
+        }
+    }
+    @IBAction func createPostAction() {
+        let post = Post()
+        post.id = 321
+        post.userId = 1
+        post.body = "body string"
+        post.title = "title string"
+        
+        RequestManager.createPost(post)
+    }
 }
 
