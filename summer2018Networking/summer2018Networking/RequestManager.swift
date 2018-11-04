@@ -10,7 +10,7 @@ import Foundation
 
 class RequestManager {
     
-    class func getPosts(with userId: Int = 1) {
+    class func getPosts(with userId: Int = 1, completionHandler: @escaping ([Post]) -> Void) {
         let path = "http://jsonplaceholder.typicode.com/posts"
         
         guard let url = URL(string: path) else { return }
@@ -30,12 +30,12 @@ class RequestManager {
                 
                 do {
                     let posts = try JSONDecoder().decode([Post].self, from: jsonData)
+                    completionHandler(posts)
                 } catch {
                     print("\(error.localizedDescription)")
                 }
             }
         }
         dataTask.resume()
-        
     }
 }

@@ -16,7 +16,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendGetRequest() {
-        RequestManager.getPosts()
+        RequestManager.getPosts(with: 1) { posts in
+            print(posts)
+            DispatchQueue.main.async {
+                //label update
+                //table update
+            }
+        }
     }
 }
 
