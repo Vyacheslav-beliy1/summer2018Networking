@@ -76,7 +76,36 @@ class RequestManager {
         
     }
     
-    
+    class func getCommentsFor(postId: Int, completion: @escaping ([Comments]) -> Void) {
+        guard let url = URL(string: Constants.Networking.comments) else { return print("error dont unwrap URL") }
+        
+        var components =  URLComponents(url: url, resolvingAgainstBaseURL: false)
+        components?.queryItems = [URLQueryItem(name: "postId", value: String(postId))]
+        guard let urlWithQuery = components?.url else { return }
+        
+        let request = URLRequest(url: urlWithQuery)
+        let tasks = URLSession.shared.dataTask(with: request) {
+            (data, response, error) in
+            if let error = error {
+                print("DataTask error: " + "\(error.localizedDescription)" + "\n")
+            } else if let usableData = data, let response = response as? HTTPURLResponse, response.statusCode == 200 {
+                do {
+                  let comments = try JSONDecoder().decode([Comments].self, from: usableData)
+                 completion(comments)
+                } catch {
+                       print("\(error.localizedDescription)")
+                }
+                
+                
+                
+                
+                print(usableData)
+              
+                
+            }
+        }
+    tasks.resume()
+    }
     
 }
 

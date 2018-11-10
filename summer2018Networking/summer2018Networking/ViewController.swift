@@ -45,5 +45,9 @@ class ViewController: UIViewController {
     
     }
     
+    @IBAction func getComments() {
+        RequestManager.getCommentsFor(postId: 6) { comments in
+            print(comments)
+        }
+    }
 }
-

@@ -15,6 +15,7 @@
 		F50AAD54218F0C5E004FFF1C /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50AAD53218F0C5E004FFF1C /* Posts.swift */; };
 		F50AAD56218F0CEB004FFF1C /* UserModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50AAD55218F0CEB004FFF1C /* UserModels.swift */; };
 		F53380A2218F32790063139F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53380A1218F32790063139F /* Constants.swift */; };
+		F5C6BA262196F85900F4ECF0 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C6BA252196F85900F4ECF0 /* Comments.swift */; };
 		F5CD4549218DD50F00FDE765 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CD4548218DD50F00FDE765 /* RequestManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		F50AAD53218F0C5E004FFF1C /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		F50AAD55218F0CEB004FFF1C /* UserModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModels.swift; sourceTree = "<group>"; };
 		F53380A1218F32790063139F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F5C6BA252196F85900F4ECF0 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
 		F5CD4548218DD50F00FDE765 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 			children = (
 				F50AAD53218F0C5E004FFF1C /* Posts.swift */,
 				F50AAD55218F0CEB004FFF1C /* UserModels.swift */,
+				F5C6BA252196F85900F4ECF0 /* Comments.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				F5CD4549218DD50F00FDE765 /* RequestManager.swift in Sources */,
 				F50AAD56218F0CEB004FFF1C /* UserModels.swift in Sources */,
 				171760A8218DB932000AA530 /* ViewController.swift in Sources */,
+				F5C6BA262196F85900F4ECF0 /* Comments.swift in Sources */,
 				171760A6218DB932000AA530 /* AppDelegate.swift in Sources */,
 				F50AAD54218F0C5E004FFF1C /* Posts.swift in Sources */,
 				F53380A2218F32790063139F /* Constants.swift in Sources */,
