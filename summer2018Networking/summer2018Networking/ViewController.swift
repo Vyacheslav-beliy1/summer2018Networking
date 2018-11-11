@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     
     
     }
-    
+  
     @IBAction func createPostAction() {
         let post = Posts()
         post.id = 324

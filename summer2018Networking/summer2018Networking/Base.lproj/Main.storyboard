@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ezo-CI-UVH">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -67,6 +67,84 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-20" y="51"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iZf-WP-6ec">
+            <objects>
+                <navigationController id="ezo-CI-UVH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bkx-wk-9fb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4s9-aC-8ym" kind="relationship" relationship="rootViewController" id="ftU-9D-0On"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9tz-8G-dgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821" y="-159"/>
+        </scene>
+        <!--User View Controller-->
+        <scene sceneID="2Cy-Nw-oRK">
+            <objects>
+                <viewController id="4s9-aC-8ym" customClass="UserViewController" customModule="summer2018Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fDd-os-Ele">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="53o-xv-mjd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="53o-xv-mjd" firstAttribute="width" secondItem="fDd-os-Ele" secondAttribute="width" id="JOd-kZ-1ss"/>
+                            <constraint firstItem="53o-xv-mjd" firstAttribute="top" secondItem="J2o-Zr-lXZ" secondAttribute="top" id="Sra-T1-ffA"/>
+                            <constraint firstAttribute="bottom" secondItem="53o-xv-mjd" secondAttribute="bottom" id="jHW-el-aYe"/>
+                            <constraint firstItem="53o-xv-mjd" firstAttribute="centerX" secondItem="J2o-Zr-lXZ" secondAttribute="centerX" id="rO8-OJ-Zz3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J2o-Zr-lXZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4yU-A8-ppH"/>
+                    <connections>
+                        <outlet property="userTabelView" destination="53o-xv-mjd" id="E5W-nB-ZSq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4v5-gf-f51" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1687" y="-160"/>
+        </scene>
+        <!--Posts View Controller-->
+        <scene sceneID="3o3-eL-0PL">
+            <objects>
+                <viewController id="miY-N7-GwY" customClass="PostsViewController" customModule="summer2018Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zZa-lw-GLB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vo5-Z2-9WZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3WG-B7-eCo" firstAttribute="trailing" secondItem="Vo5-Z2-9WZ" secondAttribute="trailing" id="774-92-isN"/>
+                            <constraint firstItem="3WG-B7-eCo" firstAttribute="bottom" secondItem="Vo5-Z2-9WZ" secondAttribute="bottom" id="Ncs-B5-cgb"/>
+                            <constraint firstItem="Vo5-Z2-9WZ" firstAttribute="leading" secondItem="3WG-B7-eCo" secondAttribute="leading" id="nM4-zb-F4U"/>
+                            <constraint firstItem="Vo5-Z2-9WZ" firstAttribute="top" secondItem="3WG-B7-eCo" secondAttribute="top" id="ri4-ci-y7e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3WG-B7-eCo"/>
+                    </view>
+                    <connections>
+                        <outlet property="postsTableView" destination="Vo5-Z2-9WZ" id="YAT-An-1Q5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZNS-KK-FsY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2486" y="-160"/>
         </scene>
     </scenes>
 </document>
