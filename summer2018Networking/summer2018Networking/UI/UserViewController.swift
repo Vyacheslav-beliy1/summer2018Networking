@@ -46,5 +46,11 @@ extension UserViewController : UITableViewDelegate , UITableViewDataSource {
         cell.users = usersArray[indexPath.row]
         return cell
     }
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath)
+        let storyBoard = UIStoryboard(name: "Main", bundle:nil)
+        let postsViewController = storyBoard.instantiateViewController(withIdentifier: "PostsViewController") as!
+        PostsViewController
+        self.present(postsViewController, animated:true, completion:nil)
+    }
 }
